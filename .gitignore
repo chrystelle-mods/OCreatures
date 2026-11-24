@@ -1,0 +1,7 @@
+/build/
+/out/
+*.user
+.vs/
+docs
+README.md
+extern/_CommonLibSSE-NG_old_v630/
