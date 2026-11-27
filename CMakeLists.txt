@@ -41,10 +41,11 @@ set(sources
     src/SkinMap.cpp
     src/Swaps.cpp
     src/OStimBridge.cpp
+    src/BeastStart.cpp
 )
 
 add_library(${PROJECT_NAME} SHARED ${sources}
-    src/PCH.h src/SkinMap.h src/Swaps.h src/OStimBridge.h)
+    src/PCH.h src/SkinMap.h src/Swaps.h src/OStimBridge.h src/BeastStart.h)
 
 target_include_directories(${PROJECT_NAME}
     PRIVATE

@@ -7,5 +7,7 @@ namespace OCreatures::Swaps
     void RestoreThread(std::int32_t a_threadID);
     void RestoreAll();
 
+    void RegisterLoadSink();
+
     void RegisterSerialization();
 }

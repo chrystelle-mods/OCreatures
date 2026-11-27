@@ -1,5 +1,6 @@
 #include "PCH.h"
 
+#include "BeastStart.h"
 #include "OStimBridge.h"
 #include "SkinMap.h"
 #include "Swaps.h"
@@ -40,6 +41,8 @@ namespace
             break;
         case SKSE::MessagingInterface::kDataLoaded:
             OCreatures::SkinMap::Load();
+            OCreatures::Swaps::RegisterLoadSink();
+            OCreatures::BeastStart::Register();
             break;
         case SKSE::MessagingInterface::kPostLoadGame:
         case SKSE::MessagingInterface::kNewGame:

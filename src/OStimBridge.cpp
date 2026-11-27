@@ -59,6 +59,8 @@ namespace OCreatures::OStimBridge
         ThreadStopListener  g_stop;
     }
 
+    OStim::ThreadInterface* Threads() { return g_threads; }
+
     bool Init()
     {
         OStim::InterfaceExchangeMessage msg;
